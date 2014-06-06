@@ -35,7 +35,9 @@ Flocke is an **opinionated** decentralized, k-ordered id generation service in S
     import scalaz._, Scalaz._
     
     Flocke.hex("54:42:49:97:a7:56").fold(
-    s => println("can't do uch without shiny new ids"),
+    
+    s => println("can't do much without shiny new ids"),
+    
     implicit f => {
       //might need 100 sometime soon
       val n = next(100)
@@ -45,8 +47,7 @@ Flocke is an **opinionated** decentralized, k-ordered id generation service in S
     
       //do something useful with the shiny new ids
       println(ids) //ok kinda lame
-    }
-    )
+    })
 ```
 
 ## Well that's so 80s, so an http service?
@@ -107,7 +108,9 @@ The project is divided  into
 
 Inspirations:
 
-https://github.com/boundary/base64
-https://github.com/gideondk/vlok, flakepack
-https://github.com/marklister/base64
+- https://github.com/boundary/base64
+
+- https://github.com/gideondk/vlok, flakepack
+
+- https://github.com/marklister/base64
 
