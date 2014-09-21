@@ -11,9 +11,8 @@ resolvers ++= Common.resolvers
 //scalacOptions ++= Common.scalacOptions
 
 libraryDependencies ++= Seq(
-  Common.http4sCore, Common.http4sDsl, Common.http4sBlaze, Common.argonaut,
-  Common.scalatest
-  )
+  Common.http4sCore, Common.http4sDsl, Common.http4sBlaze
+)
 
 Revolver.settings
 
